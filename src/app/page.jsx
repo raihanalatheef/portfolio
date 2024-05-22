@@ -1,7 +1,11 @@
+'use client';
+
 import Image from "next/image";
+import { motion } from "framer-motion";
 
 const Homepage = () => {
   return (
+    <motion.div className="h-full" initial={{ y: "-200vh"}} animate={{ y: "0%"}} transition={{ duration: 1 }}>
   <div className="flex flex-col lg:flex-row h-full lg:gap-8 px-4 sm:px-8 md:px-12 lg:px-20 xl:px-48">
     <div className="h-1/2 lg:h-full lg:w-1/2 relative">
     <Image src="/raihanaimage.png" fill alt="Raihana image" className="object-contain"/>
@@ -15,6 +19,7 @@ const Homepage = () => {
       </div>
     </div>
   </div>
+  </motion.div>
   );
 };
 
