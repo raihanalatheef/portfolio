@@ -11,11 +11,11 @@ const TransitionProvider = ({ items }) => {
     <AnimatePresence mode="wait">
       <div
         key={pathName}
-        className="w-screen h-screen bg-gradient-to-b from-blue-50 to-red-100"
+        className="w-screen h-screen bg-gradient-to-b from-blue-50 to-pink-200"
       >
         {/*These divs are added for transition between pages based on pathName value change*/}
         <motion.div
-          className="h-screen w-screen fixed bg-black rounded-b-[100px] z-40"
+          className="h-screen w-screen fixed bg-pink-600 rounded-b-[100px] z-40"
           animate={{ height: "0vh" }}
           exit={{ height: "140vh" }}
           transition={{ duration: 0.5, ease: "easeOut" }}
@@ -30,7 +30,7 @@ const TransitionProvider = ({ items }) => {
           {editedPath}
         </motion.div>
         <motion.div
-          className="h-screen w-screen fixed bg-black rounded-t-[100px] z-30 bottom-0"
+          className="h-screen w-screen fixed bg-pink-600 rounded-t-[100px] z-30 bottom-0"
           initial={{ height: "140vh" }}
           animate={{ height: "0vh", transition: { delay: 0.5 } }}
         />
