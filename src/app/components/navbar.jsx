@@ -69,14 +69,14 @@ const Navbar = () => {
   return (
     <div className="h-full flex items-center justify-between px-4 sm:px-8 md:px-12 lg:px-20 xl:px-48">
       {/* Desktop links/menu */}
-      <div className="text-black flex-row items-center justify-start gap-8 md:flex hidden w-1/3">
+      <div className="text-white font-bold flex-row items-center justify-start gap-8 md:flex hidden w-1/3">
         {links.map((linkItem) => (
           <NavLink key={linkItem} link={linkItem} />
         ))}
       </div>
       {/* Logo */}
       <div className="lg:flex w-1/3 lg:justify-center md:hidden">
-        <Link href="/" className="text-sm bg-violet-600 rounded-md p-1">
+        <Link href="/" className="text-sm bg-black rounded-md p-1">
           <span className="text-white mr-2">Rainu</span>
           <span className="text-black w-14 h-8 roundede bg-white">.dev</span>
         </Link>
